@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html,
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    max-width: 1456px;
+    
+}
+:root{
+    --color-brand:#FF9C00;
+    --color-secondary:#6D6D6D;
+    --color-green:#28D764;
+    --color-bg-light:#FFE3B7;
+    --color-red:#DD3A3A;
+    --color-bg:#FBF9F8;
+    --color-bg-bej:#F9F2EF;
+  
+}
+
+ul {
+    list-style: none;
+}
+a {
+text-decoration: none;
+color: #000000;
+}
+
+button {
+    border: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr;
+    grid-template-rows: 120px 1fr;
+    grid-gap: 20px;
+    
+}
+/* 27px/14 = 1.7 */
+#logo{
+    padding: 1.93rem;
+    margin-bottom: 85px;
+}
+.sidebar-container{
+    width: 250px;
+    background: var(--color-bg);
+    min-height: 100vh;
+ }
+
+.sidebar-container nav{
+    padding: 0 1.7rem;
+}
+
+.sidebar-container li{
+    margin-bottom: 29px;
+}
+.sidebar-container a{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.sidebar-container i{
+    font-size: 1.7rem;
+    opacity: 0.4;
+}
+
+.icon-container{
+    color:#000000;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.sidebar-container span{
+    opacity: 0.7; 
+}
+
+button{
+    border: none;
+}
+
+.profile-container{
+    background: var(--color-bg-bej);
+    min-height: 30vh;
+    padding: 1.7rem;
+}
+.profile-container > p {
+    font-size: 10px;
+    opacity: 0.5;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.profile-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.profile-wrapper p{
+    color: #000000;
+    font-size: 1rem;
+}
+#Shopper {
+    color: var(--color-brand);
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.profile-container button{
+    border-radius: 8px;
+    background: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    width: 100%;
+    padding: 14px 27px;
+    text-align: start;
+}
+
+.profile-container button i{
+    margin-right: 12px;
+    opacity: 1;
+    font-size: 20px;
+}
+/* Header + section */
+
+.header-container{
+    grid-column: 2 / span3;
+    background: #e7cbbe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1057px;
+    height: 118px;
+    
+
+}
+
+.header-container .dashboard{
+    font-size: 24px; 
+}
+.header-container .data-time{
+    font-size: 20px; 
+}
+
+.order-status-container{
+    max-width: 325px;
+    height: 100px;
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  
+}
+
+.child1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.child2{
+    grid-column: 3/4;
+    grid-row: 2/3;   
+}
+
+.child3{
+    grid-column: 2/3;
+    grid-row: 3/4;   
+}
+.child4{
+    grid-column: 3/4;
+    grid-row: 3/4;   
+}
+
+.order-action-container{
+    background: var(--color-bg-light);
+    max-width: 325px;
+    height: 163px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.child5{
+    grid-column: 2/3;
+    grid-row: 4/5;   
+}
+.child6{
+    grid-column: 3/4;
+    grid-row: 4/5;   
+}
+.order-statistic-container{
+    border-radius: 9px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    max-width: 440px;
+    height: 440px;
+}
+
+.child7{
+    grid-column: 4/5;
+    grid-row: 2/5;   
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+   
+    .grid-container{
+        grid-template-columns: 250px 1fr 1fr 1fr;
+        grid-template-rows: 120px repeat(4, 1fr);
+
+    }
+    .header{
+        grid-column: 2/ span2;
+    }
+    .child7{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+  }
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+   
+    .grid-container{
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 120px repeat(4, 1fr);
+
+    }
+    .header{
+        grid-column: 2/ span2;
+    }
+    .child7{
+        grid-column: 2/4; 
+        grid-row: 5/6;
+    }
+  }
