@@ -217,6 +217,11 @@ button{
 
 .order-action-container p{
     font-size: var(--color-secondary);
+    margin-bottom: 32px;
+}
+
+.order-action-container img{
+float: right;
 }
 
 .child5{
@@ -233,11 +238,80 @@ button{
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
     max-width: 440px;
     height: 440px;
+    padding: 1.42rem;
 }
 
 .child7{
     grid-column: 4/5;
     grid-row: 2/5;   
+}
+.order-statistic-container h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.summery-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+    position: relative;
+}
+.stock-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.stock-container p {
+    font-weight: 400;
+    width: 101px;
+}
+
+
+.figure-container img{
+    width: 210px;
+    height: 210px;
+
+    
+}
+.figure-container span{
+    position: absolute;
+    font-size: 24px;
+    top: 50%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-add{
+    width: 20px;
+    height: 20px;
+    background: var(--color-brand);
+    margin-bottom: 13px;
+}
+.checkbox-available{
+    width: 20px;
+    height: 20px;
+    background: #FFEAC9;
+}
+.order-statistic-container h5{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.low-stock{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.low-stock p{
+    font-size: 12px; 
+    font-weight: 400;
+    margin:10px 0;
+}
+
+
+.remaining {
+    color: var(--color-red);
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1200px) {
