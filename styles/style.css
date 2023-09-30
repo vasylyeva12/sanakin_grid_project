@@ -137,12 +137,14 @@ button{
 
 .header-container{
     grid-column: 2 / span3;
-    background: #e7cbbe;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1057px;
+    /* max-width: 1057px; */
     height: 118px;
+    max-width: 100%;
+
     
 
 }
